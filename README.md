@@ -6,9 +6,28 @@
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" /> 
   <img src="https://img.shields.io/badge/Prettier-ff69b4?logo=prettier&logoColor=white" /> 
   <img src="https://img.shields.io/badge/Vitest-42b883?logo=vite&logoColor=white" /> 
+  <img src="https://img.shields.io/github/last-commit/engfabiom/react-templates" /> 
+  <img src="https://img.shields.io/github/license/engfabiom/react-templates" /> 
 </p>
 
 Minimal React starter powered by **Vite** and **TypeScript**, with linting and formatting preconfigured for a clean development experience.
+
+## 🚀 Usage
+Enable pnpm via Corepack:
+
+```sh
+corepack enable
+corepack prepare pnpm@latest --activate
+Or adapt the commands below to your preferred package manager.
+```
+
+Create a new project from the main branch:
+
+```sh
+pnpm dlx degit engfabom/react-templates#vitest my-app
+cd my-app
+pnpm install
+```
 
 ## 🧰 Tech Stack
 - **Vite** — fast development server and build tool  
