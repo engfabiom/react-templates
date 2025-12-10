@@ -36,7 +36,7 @@ pnpm create vite@latest my-app --template github:engfabom/react-templates#main
 
 ## 🧩 Available Branches
 
-### `#main`
+### branch:`#main`
 
 Base template with:
 - Vite
@@ -44,7 +44,7 @@ Base template with:
 - TypeScript Strict
 - ESLint
 
-### `#vitest`
+### branch:`#vitest`
 
 - Adds a complete test setup using **Vitest** + **React Testing Library** on `jsdom`.
 - Uses **@vitejs/plugin-react-swc** for faster React/TSX transforms in both dev and tests.
@@ -52,15 +52,15 @@ Base template with:
 - Includes **Prettier** integrado ao ESLint (sem conflito) para formatação consistente.
 - Provides a minimal example component + test to support TDD out of the box.
 
-### `#pages` (TODO)
+### branch:`#pages` (TODO)
 
 - Adds a minimal `pages/`-based routing structure.
 
-### `#features` (TODO)
+### branch:`#features` (TODO)
 
 - Feature-based architecture (FSD) built on top of `pages`.
 
-### `#redux` (TODO)
+### branch:`#redux` (TODO)
 
 - Adds Redux Toolkit + Persist to the `features` setup.
 
