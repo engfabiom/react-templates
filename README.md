@@ -7,8 +7,8 @@
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" /> 
   <img src="https://img.shields.io/badge/Prettier-ff69b4?logo=prettier&logoColor=white" /> 
   <img src="https://img.shields.io/badge/Vitest-42b883?logo=vite&logoColor=white" /> 
-  <img src="https://img.shields.io/github/last-commit/engfabom/react-templates" /> 
-  <img src="https://img.shields.io/github/license/engfabom/react-templates" /> 
+  <img src="https://img.shields.io/github/last-commit/engfabiom/react-templates" /> 
+  <img src="https://img.shields.io/github/license/engfabiom/react-templates" /> 
 </p>
 
 Minimal, clean, and production-ready starter template powered by:
@@ -28,10 +28,21 @@ Contribute to this project with
 
 ## 🚀 Usage
 
-Create a new project from the `main` branch:
+Enable pnpm via Corepack:
 
 ```sh
-pnpm create vite@latest my-app --template github:engfabom/react-templates#main
+corepack enable
+corepack prepare pnpm@latest --activate
+```
+
+Or adapt the commands below to your preferred package manager.
+
+Create a new project from the main branch:
+
+```sh
+pnpm dlx degit engfabom/react-templates#main my-app
+cd my-app
+pnpm install
 ```
 
 ## 🧩 Available Branches
