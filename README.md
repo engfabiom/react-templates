@@ -40,7 +40,7 @@ Or adapt the commands below to your preferred package manager.
 Create a new project from the main branch:
 
 ```sh
-pnpm dlx degit engfabom/react-templates#main my-app
+pnpm dlx degit engfabiom/react-templates#main my-app
 cd my-app
 pnpm install
 ```
