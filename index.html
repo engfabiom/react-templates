@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>react-eslint-prettier</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="initial-loading">
+        <div class="loading-card">
+          <div class="loading-spinner" aria-hidden="true"></div>
+          <div class="loading-title">Loading Application</div>
+          <div class="loading-subtitle">
+            <p>Your connection is slower than usual.</p>
+            <p>Optimizing for low bandwidth.</p>
+            <p>This may take a moment<span>.</span><span>.</span><span>.</span></p>
+          </div>
+        </div>
+      </div>
+      <noscript>
+        <div class="noscript-wrapper">
+          <div class="noscript-card">
+            <svg class="noscript-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+              10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+              />
+            </svg>
+            <h1>JavaScript is required</h1>
+            <p>
+              This website relies on JavaScript to function properly. Your browser appears to have
+              JavaScript disabled.
+            </p>
+            <p>
+              To continue, please enable JavaScript in your browser settings and reload this page.
+            </p>
+            <ul class="noscript-steps">
+              <li>Open your browser settings</li>
+              <li>Look for “Privacy”, “Security”, or “Site settings”</li>
+              <li>Enable JavaScript</li>
+              <li>Reload this page</li>
+            </ul>
+            <div class="noscript-footer">Steps may vary depending on your browser and device.</div>
+          </div>
+        </div>
+      </noscript>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
