@@ -118,6 +118,7 @@ This template is powered by:
 - [Feature-Sliced Design](https://feature-sliced.design/) — Open-source architectural methodology
 - [Flaticon](https://www.flaticon.com/) 
   - [Web interface icons created by Icon home - Flaticon](https://www.flaticon.com/free-icons/web-interface)
+
 ---
 
 ## Support the Project
