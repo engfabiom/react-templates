@@ -6,7 +6,9 @@
   <img src="https://img.shields.io/badge/TypeScript-Strict Mode + ESNext-blue?logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" /> 
   <img src="https://img.shields.io/badge/Prettier-ff69b4?logo=prettier&logoColor=white" /> 
-  <img src="https://img.shields.io/badge/Vitest-42b883?logo=vitest&logoColor=white" /> 
+  <img src="https://img.shields.io/badge/Vitest-42b883?logo=vitest&logoColor=white" />
+  <img src="https://img.shields.io/badge/lint--staged-orange?logo=lint-stage&logoColor=white" />
+  <img src="https://camo.githubusercontent.com/316e80a5cba12bd127706519d72e010426f1337c5d08f3b93d0dc3da5744a3f1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d656e61626c65642d6875736b793f7374796c653d666c6174266c6f676f436f6c6f723d677265656e266c6162656c3d2546302539462539302542364875736b79266c696e6b3d687474707325334125324625324674797069636f64652e6769746875622e696f2532466875736b79253246" />
 </p>
 
 <p align="left"> 
@@ -18,7 +20,6 @@
   <img src="https://visitor-badge.laobi.icu/badge?page_id=engfabiom.react-templates" />
 </p>
 
-
 ## TypeScript (Strict Mode) + ESLint + Prettier
 
 A minimal, opinionated, and production-ready starter template built with:
@@ -29,6 +30,7 @@ A minimal, opinionated, and production-ready starter template built with:
 - **ESLint** (modern flat config)
 - **Prettier**
 - **Vitest**
+- **lint-staged + Husky**
 
 This repository provides a solid foundation for scalable React applications, with quality gates enabled from day one.
 
@@ -41,12 +43,13 @@ This repository provides a solid foundation for scalable React applications, wit
 
 This template enforces modern frontend best practices:
 
-| Feature                             | Branch   |
-| ----------------------------------- | -------- |
-| TypeScript strict mode              | `base`   |
-| ESLint (flat config, modern rules)  | `base`   |
-| Consistent formatting with Prettier | `base`   |
-| Testing setup with Vitest           | `vitest` |
+| Feature                               | Branch              |
+| ------------------------------------- | ------------------- |
+| TypeScript strict mode                | `base`              |
+| ESLint (flat config, modern rules)    | `base`              |
+| Consistent formatting with Prettier   | `base`              |
+| Testing setup with Vitest             | `vitest`            |
+| Fast feedback via lint-staged + Husky | `lint-staged-husky` |
 
 ---
 
@@ -79,7 +82,7 @@ You may adapt the commands below to your preferred package manager.
 ### Create a new project from the repository
 
 ```sh
-pnpm dlx degit engfabiom/react-templates#vitest my-app
+pnpm dlx degit engfabiom/react-templates#lint-staged-husky my-app
 cd my-app
 pnpm install
 ```
@@ -113,6 +116,20 @@ Adds a complete and modern testing setup:
 
 TDD-ready out of the box.
 
+### `lint-staged-husky`
+
+Extends `base` + `vitest` with commit-time enforcement:
+
+- Quality checks enforced on commit:
+  - ESLint — code quality and rule violations
+  - Prettier — consistent formatting
+- lint-staged integration
+  - Executes checks only on staged files
+  - Prevents committing broken or unformatted code
+- Husky configured with Git hooks
+  - `pre-commit` hook enabled
+  - `pre-push` hook enabled
+
 ---
 
 ## Contributing
@@ -135,8 +152,11 @@ This template is powered by:
 - [Prettier](https://prettier.io/) — MIT License
 - [Feature-Sliced Design](https://feature-sliced.design/) — Open-source architectural methodology
 - [Vitest](https://vitest.dev/) — MIT License
-- [Flaticon](https://www.flaticon.com/) 
+- [lint-staged](https://github.com/lint-staged/lint-staged) — MIT License
+- [Husky](https://typicode.github.io/husky/) — MIT License
+- [Flaticon](https://www.flaticon.com/)
   - [Web interface icons created by Icon home - Flaticon](https://www.flaticon.com/free-icons/web-interface)
+
 ---
 
 ## Support the Project
