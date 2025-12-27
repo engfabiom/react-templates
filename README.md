@@ -6,6 +6,7 @@
   <img src="https://img.shields.io/badge/TypeScript-Strict Mode + ESNext-blue?logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" /> 
   <img src="https://img.shields.io/badge/Prettier-ff69b4?logo=prettier&logoColor=white" /> 
+  <img src="https://img.shields.io/badge/Vitest-42b883?logo=vitest&logoColor=white" /> 
 </p>
 
 <p align="left"> 
@@ -27,6 +28,7 @@ A minimal, opinionated, and production-ready starter template built with:
 - **TypeScript** (Strict Mode + ESNext)
 - **ESLint** (modern flat config)
 - **Prettier**
+- **Vitest**
 
 This repository provides a solid foundation for scalable React applications, with quality gates enabled from day one.
 
@@ -39,11 +41,12 @@ This repository provides a solid foundation for scalable React applications, wit
 
 This template enforces modern frontend best practices:
 
-| Feature                             | Branch |
-| ----------------------------------- | ------ |
-| TypeScript strict mode              | `base` |
-| ESLint (flat config, modern rules)  | `base` |
-| Consistent formatting with Prettier | `base` |
+| Feature                             | Branch   |
+| ----------------------------------- | -------- |
+| TypeScript strict mode              | `base`   |
+| ESLint (flat config, modern rules)  | `base`   |
+| Consistent formatting with Prettier | `base`   |
+| Testing setup with Vitest           | `vitest` |
 
 ---
 
@@ -76,7 +79,7 @@ You may adapt the commands below to your preferred package manager.
 ### Create a new project from the repository
 
 ```sh
-pnpm dlx degit engfabiom/react-templates#base my-app
+pnpm dlx degit engfabiom/react-templates#vitest my-app
 cd my-app
 pnpm install
 ```
@@ -94,6 +97,21 @@ Core template including:
 - ESLint
 - Prettier
 - Feature-Sliced Design (FSD) flat architecture prepared
+
+### `vitest`
+
+Adds a complete and modern testing setup:
+
+- Extends `base`
+- Vitest + React Testing Library
+- `jsdom` test environment
+- `@vitejs/plugin-react-swc` for faster TSX transforms
+- ESLint configured with:
+  - React rules
+  - Vitest globals and environment
+  - Prettier integrated (no conflicts)
+
+TDD-ready out of the box.
 
 ---
 
@@ -116,6 +134,7 @@ This template is powered by:
 - [ESLint](https://eslint.org/) — MIT License
 - [Prettier](https://prettier.io/) — MIT License
 - [Feature-Sliced Design](https://feature-sliced.design/) — Open-source architectural methodology
+- [Vitest](https://vitest.dev/) — MIT License
 - [Flaticon](https://www.flaticon.com/) 
   - [Web interface icons created by Icon home - Flaticon](https://www.flaticon.com/free-icons/web-interface)
 ---
