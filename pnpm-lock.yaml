@@ -78,9 +78,6 @@ importers:
       prettier:
         specifier: ^3.7.4
         version: 3.7.4
-      react-eslint-prettier:
-        specifier: 'link:'
-        version: 'link:'
       typescript:
         specifier: ~5.9.3
         version: 5.9.3
