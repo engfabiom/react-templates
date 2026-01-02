@@ -43,13 +43,13 @@ This repository provides a solid foundation for scalable React applications, wit
 
 This template enforces modern frontend best practices:
 
-| Feature                               | Branch              |
-| ------------------------------------- | ------------------- |
-| TypeScript strict mode                | `base`              |
-| ESLint (flat config, modern rules)    | `base`              |
-| Consistent formatting with Prettier   | `base`              |
-| Testing setup with Vitest             | `vitest`            |
-| Fast feedback via lint-staged + Husky | `lint-staged-husky` |
+| Feature                               | Branch   |
+| ------------------------------------- | -------- |
+| TypeScript strict mode                | `base`   |
+| ESLint (flat config, modern rules)    | `base`   |
+| Consistent formatting with Prettier   | `base`   |
+| Testing setup with Vitest             | `vitest` |
+| Fast feedback via lint-staged + Husky | `husky`  |
 
 ---
 
@@ -82,7 +82,7 @@ You may adapt the commands below to your preferred package manager.
 ### Create a new project from the repository
 
 ```sh
-pnpm dlx degit engfabiom/react-templates#lint-staged-husky my-app
+pnpm dlx degit engfabiom/react-templates#husky my-app
 cd my-app
 pnpm install
 ```
@@ -116,7 +116,7 @@ Adds a complete and modern testing setup:
 
 TDD-ready out of the box.
 
-### `lint-staged-husky`
+### `husky`
 
 Extends `base` + `vitest` with commit-time enforcement:
 
